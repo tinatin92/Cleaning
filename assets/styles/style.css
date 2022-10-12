@@ -366,6 +366,38 @@ header {
   bottom: 0;
   left: 0;
 }
+.testimonial-slider .slick-arrow{
+  width: 5px;
+  height: 5px;
+  border-radius: 50px;
+  font-size: 0;
+  border:1px solid #D9D9D9;
+  background-color: #D9D9D9;
+transition-duration: 0.3s;
+cursor: pointer;
+}
+.active-arrow{
+  cursor: pointer;
+  position: relative;
+  left: 20px !important;
+  width: 135px !important;
+  height: 3px !important;
+  font-size: 0 !important;
+  border:1px solid #ed1c24 !important;
+  outline: none !important;
+  border-radius: 3px !important;
+  background-color: #ed1c24 !important;
+}
+.testimonial-slider .slick-prev{
+  position: absolute;
+  bottom: 90px;
+  left: 0 !important;
+}
+.testimonial-slider .slick-next{
+  position: absolute;
+  bottom: 90px;
+  left: 150px;
+}
 .icon-Vector-2 {
   font-size: 30px;
   color: #ed1c24;
