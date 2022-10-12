@@ -1184,6 +1184,10 @@ text-transform: uppercase;
   display: flex;
   align-items: center;
 }
+.project-detail_tags i{
+  font-size: 32px;
+  margin: 0 20px 0 0;
+}
 .project-detail_tags div{
   display: flex;
   align-items: center;
@@ -1330,6 +1334,12 @@ letter-spacing: 1px;
   grid-template-rows: repeat(auto,1fr);
   column-gap: 64px;
   row-gap:26px ;
+}
+.speciality-grid i{
+  font-size: 32px;
+  margin: 0 16px 0 0;
+  color: #fff;
+
 }
 .speciality-grid div a{
   color: #fff;
@@ -2019,3 +2029,4 @@ border: 1px solid #fff;
  .collaboration-row input[type=file]{
   width:100%;
  }
+ 
