@@ -37,14 +37,16 @@ $(document).ready(function(){
  })
 
 $("#applay").click(function(){
-  $(".aplication-form").css("display", "block")
+  $(".aplication-form").css("display", "block"),
+  $(".aplication-form_background").css("display", "block"),
+  $(".aplication-form__form").css("display", "block"),
+  $('body').css("overflow","hidden")
+  
 })
 
-$(".aplication-form__form").focus(function(){
-   $(".aplication-form").css("display","block")
-})
-
-$(".aplication-form").click(function(){
-  $(this).css("display", "none")
+$(".aplication-form_background").click(function(){
+  $(".aplication-form_background").css("display", "none"),
+  $(".aplication-form__form").css("display", "none"),
+  location.reload(true)
 })
 });
