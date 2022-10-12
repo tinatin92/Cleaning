@@ -35,4 +35,16 @@ $(document).ready(function(){
   speed:1000,
   
  })
+
+$("#applay").click(function(){
+  $(".aplication-form").css("display", "block")
+})
+
+$(".aplication-form__form").focus(function(){
+   $(".aplication-form").css("display","block")
+})
+
+$(".aplication-form").click(function(){
+  $(this).css("display", "none")
+})
 });
