@@ -1894,21 +1894,40 @@ margin: 0 0 35px 0;
   position: absolute;
 
 }
+.aplication-form-file{
+  background-color: #F3F5F6;
+}
+.aplication-form-file i{
+  position: absolute;
+  top: 50%;
+  left: 33%;
+  transform: translate(-33%,-50%);
+  font-size: 28px;
+  transition-duration: 0.3s;
+}
 .aplication-form__form form  .aplication-form-file label{
   width: 100%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
+  cursor: pointer;
 }
-.aplication-form__form form  .aplication-form-file input{
+ .aplication-form-file input[type=file]{
+
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 32px 0;
   text-align: center;
   cursor: pointer;
-  border: none;
+  visibility: hidden;
+}
+.aplication-form__form{
+  cursor: pointer;
+}
+.aplication-form-file:hover i{
+  color: #ED1C24;
 }
 .aplication-form__form button{
   width: 150px;
