@@ -1012,6 +1012,8 @@ iframe {
 }
 .boxes-box {
   width: 74%;
+  display: flex;
+  align-items: center;
 }
 .boxes-box__div {
   display: flex;
