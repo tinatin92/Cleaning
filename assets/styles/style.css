@@ -849,6 +849,7 @@ iframe {
 .examples {
   width: 100%;
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: space-between;
 }
@@ -857,6 +858,7 @@ iframe {
   width: 25%;
   padding: 30px;
   display: flex;
+  
   flex-direction: column;
   align-items: center;
   text-align: center;
