@@ -1036,9 +1036,9 @@ iframe {
 .boxes-h1 {
   width: 26%;
 }
-.boxes-box .boxes-box__div:nth-child(odd) {
+/* .boxes-box .boxes-box__div:nth-child(odd) {
   justify-content: flex-end;
-}
+} */
 .boxes-box .boxes-box__div:nth-child(odd) div:not(:last-of-type) {
   margin: 0 160px 46px 0;
 }
@@ -1584,13 +1584,12 @@ iframe {
   margin: 0 0 20px 0;
 }
 .cards-row {
-  display: flex;
-  align-items: center;
-  margin: 0 0 12px 0;
+  display: grid;
+  grid-template-columns: repeat(4,1fr);
+  gap: 20px;
 }
 .cards-row .card {
   position: relative;
-  width: 25%;
   padding: 0px 34px 10px 34px;
   border: 3px solid #f3f5f6;
   border-radius: 6px;
@@ -1658,33 +1657,49 @@ iframe {
   top: 40%;
   left: 0;
 }
-.vacancy .boxes-box {
+.vacancy .amazing-box {
   width: 74%;
+  position: relative;
 }
-.vacancy .boxes-box__div {
+.vacancy .amazing-box .amazing-box_grid{
   display: flex;
-  width: 100%;
+ color: #fff;
+flex-wrap: wrap;
 }
-.vacancy .boxes-box__div div {
-  height: 70px;
-  width: 248px;
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div{
+  width:33%;
+  margin-bottom: 45px;
+  
   display: flex;
-  align-items: center;
-  justify-content: center;
-  font-size: 18px;
-  border-radius: 5px;
-  transition-duration: 0.3s;
-  cursor: pointer;
-  background-color: #101010;
-  color: #fff;
-  border: 3px solid #fff;
 }
-.vacancy .boxes-box__div:nth-child(even) div:nth-child(odd),
-.vacancy .boxes-box__div:nth-child(even) div:nth-child(even) {
-  background-color: #101010;
-  color: #fff;
-  border: 3px solid #fff;
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div div{
+width: 70%;
+  padding: 22px 0;
+  border: 1px solid #fff;
+ display: flex;
+ justify-content: center;
+ border-radius: 5px;
+ font-size: 18px;
+ font-weight: 600;
+ transition-duration: 0.3s;
+ cursor: pointer;
+
 }
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div div:hover{
+  background-color: #fff;
+  color: #000;
+  border: 1px solid #fff;
+}
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(1),
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(2),
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(3),
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(7),
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(8),
+.vacancy .amazing-box .amazing-box_grid .amazing-box_grid-div:nth-child(9)
+{
+justify-content: flex-end;
+}
+
 
 .vacancy-boxes-h1 {
   width: 26%;
@@ -1695,35 +1710,7 @@ iframe {
   font-weight: 700;
   text-transform: uppercase;
 }
-.vacancy .boxes-box .boxes-box__div:nth-child(odd) {
-  justify-content: flex-end;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(odd) div:not(:last-of-type) {
-  margin: 0 160px 46px 0;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(even) div:not(:first-of-type) {
-  margin: 0 0 46px 160px;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(even) div:nth-child(even):hover {
-  background-color: #fff;
-  border: 3px solid #ececec;
-  color: #101010;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(even) div:nth-child(odd):hover {
-  background-color: #fff;
-  border: 3px solid #ececec;
-  color: #101010;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(odd) div:nth-child(even):hover {
-  background-color: #fff;
-  border: 3px solid #ececec;
-  color: #101010;
-}
-.vacancy .boxes-box .boxes-box__div:nth-child(odd) div:nth-child(odd):hover {
-  background-color: #fff;
-  border: 3px solid #ececec;
-  color: #101010;
-}
+
 /*****************9**************/
 .morevacancies-h1 h1 {
   font-size: 26px;
