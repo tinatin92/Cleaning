@@ -63,3 +63,21 @@ $(".aplication-form_background").click(function(){
   location.reload(true)
 })
 });
+$('#aplication-file').on('change' , function(){
+  
+  let i =$(this).prev('label').clone();
+  let file = $('#aplication-file')[0].files[0].name 
+   $(this).prev('label').text( file) 
+})
+$('#file1').on('change' , function(){
+  
+  let i =$(this).prev('label').clone();
+  let file = $('#file1')[0].files[0].name 
+   $(this).prev('label').text( file) 
+})
+$('#file2').on('change' , function(){
+  
+  let i =$(this).prev('label').clone();
+  let file = $('#file2')[0].files[0].name 
+   $(this).prev('label').text( file) 
+})

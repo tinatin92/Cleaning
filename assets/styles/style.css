@@ -107,6 +107,7 @@ header {
   display: block;
   position: relative;
   padding: 0 0 10px 2px;
+ 
 }
 .header-menu a::after {
   content: "";
@@ -121,6 +122,7 @@ header {
 }
 .header-menu a:hover {
   color: #ed1c24;
+  text-shadow: 0 0px 1px #ed1c24;
 }
 .header-menu a:hover::after {
   width: 100%;
@@ -937,7 +939,7 @@ iframe {
   width: 388px !important;
   height: 277px !important;
   overflow: hidden;
-  margin: 0 0 0 42px;
+  margin: 0 0 0 21px;
   background-color: rgba(16, 16, 16, 0.5);
 }
 .offering-slider_item img {
@@ -1833,7 +1835,7 @@ justify-content: flex-end;
   left: 0;
 }
 .aplication-form_background {
-  position: absolute;
+  position:fixed;
   width: 100%;
   height: 100vh;
   background-color: rgba(0, 0, 0, 0.57);
@@ -1856,7 +1858,7 @@ justify-content: flex-end;
   display: none;
 }
 .aplication-form__form {
-  position: absolute;
+  position: fixed;
   max-width: 904px;
   max-height: 884px;
   left: 50%;
@@ -1912,6 +1914,11 @@ justify-content: flex-end;
 }
 .aplication-form__form form .aplication-form-file label {
   position: absolute;
+  display: block;
+  left: 50%;
+  top: 0;
+  transform: translate(-50%,0);
+  
 }
 .aplication-form-file {
   background-color: #f3f5f6;
@@ -1925,12 +1932,12 @@ justify-content: flex-end;
   transition-duration: 0.3s;
 }
 .aplication-form__form form .aplication-form-file label {
-  width: 100%;
+  width: 30%;
   height: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
-  cursor: pointer;
+  cursor: pointer;text-align: center;
 }
 .aplication-form-file input[type="file"] {
   display: flex;
@@ -2089,6 +2096,34 @@ justify-content: flex-end;
 }
 .collaboration-row input[type="file"] {
   width: 100%;
+}
+.colaboration-files {
+  position: relative;
+  
+}
+.colaboration-files input{
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+  
+  font-size: 0;
+  visibility: hidden;
+}
+.colaboration-files label{
+  position: absolute;
+  width: 68%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  right: 0;
+  text-align: start;
+
+}
+.colaboration-files i{
+  position: absolute;
+  font-size: 24px;
+  
 }
 /***********11************/
 .search{
