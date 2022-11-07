@@ -6,6 +6,25 @@ $(document).ready(function(){
     slidesToShow:6,
     slidesToScroll:1,
     speed:1000,
+    responsive:[
+      {
+        breakpoint:1034,
+          settings:{
+           slidesToShow:4,
+           slidesToScroll:1,
+             
+          },
+        }, 
+      {
+        breakpoint:778,
+          settings:{
+           slidesToShow:2,
+           slidesToScroll:1,
+             
+          },
+        }
+      
+    ]
        
  });
  $(function() {
@@ -46,6 +65,17 @@ $(document).ready(function(){
   slidesToShow:2,
   slidesToScroll:1,
   speed:1000,
+  responsive:[
+    {
+      breakpoint:768,
+        settings:{
+         slidesToShow:1,
+         slidesToScroll:1,
+           
+        },
+      }
+    
+  ]
   
  })
 
@@ -80,4 +110,12 @@ $('#file2').on('change' , function(){
   let i =$(this).prev('label').clone();
   let file = $('#file2')[0].files[0].name 
    $(this).prev('label').text( file) 
+})
+
+$('.burger-icon').click(function(){
+  $('.burger').toggleClass("active-menu");
+  $('.span2').toggleClass('span-x2')
+  $('.span1').toggleClass('span-x1')
+  $('.span3').toggleClass('span-x3')
+
 })
